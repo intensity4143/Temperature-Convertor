@@ -23,6 +23,7 @@ function resultvalue(){
             result.innerHTML = `<span>${resultValue}&deg;K</span>`
         }
         else{
+            inputVal = inputVal.toFixed(2)
             result.innerHTML = `<span>${inputVal}&deg;C</span>`
         }
     else if(inpType === "Fahrenheit")
@@ -35,6 +36,7 @@ function resultvalue(){
             result.innerHTML = `<span>${resultValue}&deg;K</span>`
         }
         else{
+            inputVal = inputVal.toFixed(2)
             result.innerHTML = `<span>${inputVal}&deg;F</span>`
         }
     else{
@@ -47,6 +49,7 @@ function resultvalue(){
             result.innerHTML = `<span>${resultValue}&deg;F</span>`
         }
         else{
+            inputVal = inputVal.toFixed(2)
             result.innerHTML = `<span>${inputVal}&deg;K</span>`
         }
     }
