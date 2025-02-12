@@ -19,7 +19,7 @@ function resultvalue(){
             result.innerHTML = `<span>${resultValue}&deg;F</span>`
         }
         else if(outType==="Kelvin"){
-            const resultValue = inputVal+273.15
+            const resultValue = (inputVal+273.15).toFixed(2)
             result.innerHTML = `<span>${resultValue}&deg;K</span>`
         }
         else{
